@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: speaker
+  namespace: platform101
+  labels:
+    project: platform101
+    lab: lab01
+    app: speaker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: speaker
+  template:
+    metadata:
+      labels:
+        app: speaker
+    spec:
+      containers:
+      - name: speaker
+        image: platform101/speaker
