@@ -7,10 +7,9 @@
 
 ## Requirements
 
-- Basic linux commands
-- Docker installed
+- Linux
+- Docker
 - Kind (see [Kind installation](#kind-installation))
-- Basic Docker knowledge is recommended
 
 ### Kind installation
 
