@@ -26,3 +26,8 @@ Create a local Kubernetes cluster!
 ```
 kind create cluster
 ```
+
+Create a dedicated namespace
+```
+kubectl create namespace platform101
+```
