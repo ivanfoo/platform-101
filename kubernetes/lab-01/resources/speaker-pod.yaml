@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: speaker
+  namespace: platform101
+  labels:
+    project: platform101
+spec:
+  containers:
+    - name: speaker
+      image: platform101/speaker
