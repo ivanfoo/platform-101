@@ -48,6 +48,7 @@ spec:
       port: 80
       targetPort: 8080
 ```
+**Manifest »** [speaker-api-service.yaml](./resources/speaker-api-service.yaml)
 
 Check the kubernetes service is working fine:
 ```
