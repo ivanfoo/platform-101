@@ -8,8 +8,7 @@ The engineering team is developing an annoying service called **speaker-api** th
 GET /words
 ```
 
-We need to run 2 replicas of this container in production. The image is `platform101/speaker-api`. In the containers section, remember to expose the port 8080 as this is where the service is listening to. Create a manifest file and apply it with `kubectl` :)
-
+The docker image is `platform101/speaker-api` and want to run 2 replicas of this container in production for high availability reasons. Create a manifest file and apply it with `kubectl`. In the containers section, remember to expose the port 8080 as this is where the service is listening to :)
 ```
 containers:
   - name: speaker-api
