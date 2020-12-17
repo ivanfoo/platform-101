@@ -38,11 +38,10 @@ Check the logs:
 kubectl -n platform101 logs -f pod/speaker
 ```
 
-Remove it:
+Delete the pod and see how no replacement is created:
 ```
-kubectl -n platform101 delete -f resources/speaker-pod.yaml
+kubectl -n platform101 delete pod/speaker
 ```
-
 
 ### Doing it the right way
 What's the problem with this configuration? Easy! It does not offer any garantees if the pod crashes or the node where the pod is running goes down. The pod will
@@ -91,12 +90,26 @@ kubectl -n platform101 describe deployment/speaker
 Get running replicas:
 ```
 kubectl -n platform101 get pods -l app=speaker
-
 ```
 
 Check the logs:
 ```
 kubectl -n platform101 logs -f -l app=speaker
+```
+
+Delete one replica:
+```
+kubectl -n platform101 delete pod <POD_NAM>
+```
+
+Check a replacement is started:
+```
+kubectl -n platform101 get pods -l app=speaker
+```
+
+Play a little bit with the desired replicas:
+```
+kubectl -n platform101 scale deployment/speaker --replicas=<NUMBER>
 ```
 
 ## References
