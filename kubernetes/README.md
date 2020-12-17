@@ -9,7 +9,7 @@
 
 - Basic linux commands
 - Docker installed
-- Kind (see [instructions](#kind installation))
+- Kind (see [Kind installation](#kind-installation))
 - Basic Docker knowledge is recommended
 
 ### Kind installation
