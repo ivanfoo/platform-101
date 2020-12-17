@@ -14,7 +14,7 @@
 
 ### Kind installation
 
-Kind is a kubernetes implementation in docker to run a local cluster. It will be our learning play field.
+Kind is a kubernetes implementation in docker to run a local cluster. It will be our learning play field. More info: https://github.com/kubernetes-sigs/kind
 
 Download the compiled binary:
 ```
